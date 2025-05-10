@@ -1,0 +1,1154 @@
+[
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Hot Cakes",
+    "titulo": "Hot cakes Naturales (3pzs)",
+    "descripcion": "libre de azucar",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/hotcakes_naturales.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Hot Cakes",
+    "titulo": "Hot Cakes Clasicos (3pzs)",
+    "descripcion": "Bañados de Cajeta, Nutella o Lechera",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/hotcakes_clasicos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Hot Cakes",
+    "titulo": "Hot Cakes Salados (3pzs)",
+    "descripcion": "Acompañados con jamón y/o tocino",
+    "Precio": "$80.00",
+    "url de imagen": "/images/menu/logonala-menu.avif"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Crepa Dulce",
+    "titulo": "Crepa de Cajeta",
+    "descripcion": "Con fruta del dia",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/crepa_dulce_cajeta.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Crepa Dulce",
+    "titulo": "Crepa de Chocolate ",
+    "descripcion": "Con fruta del dia",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/crepa_dulce.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos Estrellados o revueltos ",
+    "descripcion": "Acompañados con frijoles ",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/huevos_estrellados.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos Revueltos con jamón",
+    "descripcion": "Acompañados con frijoles, (cerdo o pavo) queso.",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/huevos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos Rancheros",
+    "descripcion": "estrellados y montados sobre una tortilla, bañados con su salsa ranchera, compañados con frijoles ",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/huevos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos Divorciados",
+    "descripcion": "Acompañados con frijoles ",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/huevos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos con salsa verde y roja",
+    "descripcion": "Acompañados con frijoles ",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/huevos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Huevos al Gusto",
+    "titulo": "Huevos con vegetales",
+    "descripcion": "Aderezos al gusto",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/huevos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet con queso manchego y jamón con tocino",
+    "descripcion": "Aderezos al gusto",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/omelet_queso_jamon.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet con queso manchego y chorizo",
+    "descripcion": "Aderezos al gusto",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/omelet_queso_manchego.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet con queso manchego y vegetales",
+    "descripcion": "Aderezos al gusto",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/omelet_queso_manchego.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet Natural dorado",
+    "descripcion": "acompañado de crema batida y miel maple",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/omelet.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet Natural con platano y chocolate",
+    "descripcion": "acompañado de crema batida y miel maple",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/omelet.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Omelets",
+    "titulo": "Omelet Frutas rojas",
+    "descripcion": "acompañado de crema batida y miel maple",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/omelet.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Verdes - Estilo Méxicano",
+    "descripcion": "Estilo México",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/chilaquiles_verdes.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Verdes y acompañados de frijoles y queso",
+    "descripcion": "Estilo México",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/chilaquiles_verdes.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Rojos - Estilo Méxicano",
+    "descripcion": "Estilo México",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Rojos y acompañados de frijoles y queso",
+    "descripcion": "Estilo México",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles habanero (muy picosos) ",
+    "descripcion": "Acompañados de frijoles y queso - Estilo México",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Rojos con huevo",
+    "descripcion": "Estilo México",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Verdes con huevo",
+    "descripcion": "Estilo México",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/chilaquiles_verdes.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles Con pollo o carne deshebrada",
+    "descripcion": "Estilo México",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Chilaquiles ",
+    "titulo": "Chilaquiles con bistec y acompañados de frijoles y queso",
+    "descripcion": "Estilo México",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/chilaquiles_rojos.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Molletes ",
+    "titulo": "Molletes de frijoles con queso gratinado",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/molletes__frijoles_gratinados.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Molletes ",
+    "titulo": "Mollete de Chilaquiles con queso gratinado",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/molletes__frijoles_gratinados.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Molletes ",
+    "titulo": "Mollete con jamón  y queso gratinado",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/molletes__frijoles_gratinados.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Molletes ",
+    "titulo": "Mollete con bistec y queso gratinado",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/molletes__frijoles_gratinados.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Molletes ",
+    "titulo": "Mollete dulce",
+    "descripcion": "Cajeta, mermelada, Lechera",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/molletes_dulces.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Clasicos del Menú",
+    "titulo": "Panela asada, bañada en salsa y acompañada con frijoles",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/panela_asada.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Clasicos del Menú",
+    "titulo": "Enchiladas suizas (3 pzs)",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/enchiladas.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Clasicos del Menú",
+    "titulo": "Enfrijoladas (3pzs)",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/enfrijoladas.webp"
+  },
+  {
+    "Menu": "DESAYUNOS",
+    "sub-menu": "Clasicos del Menú",
+    "titulo": "Bistec de res con frijol y ensalda",
+    "descripcion": "Salsa pico de gallo",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/logonala-menu.avif"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Buche",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada_buche.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Carne surtida",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Carne",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Pancita",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$80.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Lengua",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Pollo",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada_pollo.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Panela",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Costilla",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/torta_ahogada_costilla.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Camaron",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$100.00",
+    "url de imagen": "/images/menu/torta_ahogada.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Carne (mini)",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/torta_ahogada_mini.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tortas Ahogadas ",
+    "titulo": "Torta Ahogada Camaron (mini)",
+    "descripcion": "Acompañadas con cebolla desflemada, col, limones y salsa.",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/torta_ahogada_mini.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Carnitas (Orden)",
+    "titulo": "Carnitas (Orden) Familiar (1Kg) surtida",
+    "descripcion": "Inluye 1/2 kg de tortillas, frijoles y salsa",
+    "Precio": "$500.00",
+    "url de imagen": "/images/menu/carnitas.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Carnitas (Orden)",
+    "titulo": "Carnitas (Orden) Grande 400 gramos ",
+    "descripcion": "Incluye 10 tortillas, frijoles y salsa",
+    "Precio": "$210.00",
+    "url de imagen": "/images/menu/carnitas.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Carnitas (Orden)",
+    "titulo": "Carnitas (Orden) Chica 200 gramos",
+    "descripcion": "Incluye 5 tortillas, frijoles y salsa",
+    "Precio": "$160.00",
+    "url de imagen": "/images/menu/carnitas.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos dorados",
+    "titulo": "Tacos dorados Sencillos (frijol)",
+    "descripcion": "acompañadas con lechuga y salsa",
+    "Precio": "$15.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos dorados",
+    "titulo": "Tacos dorados Sencillos (requeson)",
+    "descripcion": "acompañadas con lechuga y salsa",
+    "Precio": "$15.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos dorados",
+    "titulo": "Tacos dorados Sencillos (papa)",
+    "descripcion": "acompañadas con lechuga y salsa",
+    "Precio": "$15.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos dorados",
+    "titulo": "Tacos dorados Con Carne",
+    "descripcion": "acompañadas con lechuga y salsa",
+    "Precio": "$30.00",
+    "url de imagen": "/images/menu/tacos_dorados_carne.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos dorados",
+    "titulo": "Tacos dorados Con Camaron",
+    "descripcion": "acompañadas con lechuga y salsa",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/tacos_dorados.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos blandos",
+    "titulo": "Tacos blandos Sencillos (frijol)",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/tacos_blandos.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos blandos",
+    "titulo": "Tacos blandos Sencillos (requeson)",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/tacos_blandos.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos blandos",
+    "titulo": "Tacos blandos Sencillos (papa)",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/tacos_blandos.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos blandos",
+    "titulo": "Tacos blandos Con carne de tu elección",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/tacos_blandos.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos blandos",
+    "titulo": "Tacos blandos Con Camaron",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/tacos_blandos.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos Barbacoa",
+    "titulo": "Tacos Barbacoa Blando",
+    "descripcion": "Acompañados de cebolla dorada",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/tacos_barbacoa.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Tacos Barbacoa",
+    "titulo": "Tacos Barbacoa Dorado",
+    "descripcion": "Acompañados de cebolla dorada",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/tacos_barbacoa.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Quesadilla Maiz",
+    "titulo": "Quesadilla Maiz solo queso",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/quesadilla_maiz.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Quesadilla Maiz",
+    "titulo": "Quesadilla Maiz Rajas",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/quesadilla_maiz.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Quesadilla Maiz",
+    "titulo": "Quesadilla Maiz Champiñones",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/quesadilla_maiz.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Quesadilla Maiz",
+    "titulo": "Quesadilla Maiz Con la carne de tu elección",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/quesadilla_maiz.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Quesadilla Maiz",
+    "titulo": "Quesadilla Maiz Con Camaron",
+    "descripcion": "Con tortilla recién hecha ",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/quesadilla_maiz.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Lonches",
+    "titulo": "Lonches Jamon",
+    "descripcion": "Estilo México",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/lonche_jamon.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Lonches",
+    "titulo": "Lonches Chilaquiles",
+    "descripcion": "Estilo México",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/lonches.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Lonches",
+    "titulo": "Lonches Pierna",
+    "descripcion": "Estilo México",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/lonches.webp"
+  },
+  {
+    "Menu": "TRADICIONALES",
+    "sub-menu": "Lonches",
+    "titulo": "Lonches Panela",
+    "descripcion": "Estilo México",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/lonches.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Grande",
+    "titulo": "Pozole Grande Surtido",
+    "descripcion": "Grande",
+    "Precio": "$100.00",
+    "url de imagen": "/images/menu/pozole.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Grande",
+    "titulo": "Pozole Grande Cabeza(Trompa, Lengua, oreja, cachete)",
+    "descripcion": "Grande",
+    "Precio": "$100.00",
+    "url de imagen": "/images/menu/pozole.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Grande",
+    "titulo": "Pozole Grande Carnaza",
+    "descripcion": "Grande",
+    "Precio": "$100.00",
+    "url de imagen": "/images/menu/pozole.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Grande",
+    "titulo": "Pozole Grande Pata deshuesada",
+    "descripcion": "Grande",
+    "Precio": "$105.00",
+    "url de imagen": "/images/menu/pozole.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Grande",
+    "titulo": "Pozole Grande Pozole sin carne",
+    "descripcion": "Grande",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/pozole.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Mixto / Surtido",
+    "descripcion": "Mediano",
+    "Precio": "$85.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Surtido",
+    "descripcion": "Mediano",
+    "Precio": "$85.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Cabeza(Trompa, Lengua, oreja, cachete)",
+    "descripcion": "Mediano",
+    "Precio": "$90.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Carnaza",
+    "descripcion": "Mediano",
+    "Precio": "$90.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Pata deshuesada",
+    "descripcion": "Mediano",
+    "Precio": "$85.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Mediano",
+    "titulo": "Pozole Mediano Pozole sin carne",
+    "descripcion": "Mediano",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_mediano.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Mixto / Surtido",
+    "descripcion": "Chico",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Surtido",
+    "descripcion": "Chico",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Cabeza(Trompa, Lengua, oreja, cachete)",
+    "descripcion": "Chico",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Carnaza",
+    "descripcion": "Chico",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Pata deshuesada",
+    "descripcion": "Chico",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Pozole Chico",
+    "titulo": "Pozole Chico Pozole sin carne",
+    "descripcion": "Chico",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/pozole_chico.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Enchiladas",
+    "titulo": "Enchiladas Queso y cebolla",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/enchiladas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Enchiladas",
+    "titulo": "Enchiladas carne o pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/enchiladas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tacos Dorados",
+    "titulo": "Tacos Dorados Papa",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tacos Dorados",
+    "titulo": "Tacos Dorados Raja",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tacos Dorados",
+    "titulo": "Tacos Dorados Requeson",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tacos Dorados",
+    "titulo": "Tacos Dorados Frijol",
+    "descripcion": "1 Pza",
+    "Precio": "$18.00",
+    "url de imagen": "/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tacos Dorados",
+    "titulo": "Tacos Dorados Carne o pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$23.00",
+    "url de imagen": "/images/menu/tacos_dorados.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Flautas",
+    "titulo": "Flautas Papa",
+    "descripcion": "1 Pza",
+    "Precio": "$28.00",
+    "url de imagen": "/images/menu/flautas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Flautas",
+    "titulo": "Flautas Raja",
+    "descripcion": "1 Pza",
+    "Precio": "$28.00",
+    "url de imagen": "/images/menu/flautas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Flautas",
+    "titulo": "Flautas Requeson",
+    "descripcion": "1 Pza",
+    "Precio": "$28.00",
+    "url de imagen": "/images/menu/flautas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Flautas",
+    "titulo": "Flautas Frijol",
+    "descripcion": "1 Pza",
+    "Precio": "$28.00",
+    "url de imagen": "/images/menu/flautas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Flautas",
+    "titulo": "Flautas Carne o pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$35.00",
+    "url de imagen": "/images/menu/flautas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Sopes",
+    "titulo": "Sopes Papa",
+    "descripcion": "1 Pza",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/sopes.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Sopes",
+    "titulo": "Sopes Raja",
+    "descripcion": "1 Pza",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/sopes.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Sopes",
+    "titulo": "Sopes Requeson",
+    "descripcion": "1 Pza",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/sopes.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Sopes",
+    "titulo": "Sopes Frijol",
+    "descripcion": "1 Pza",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/sopes.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Sopes",
+    "titulo": "Sopes Carne o pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/sopes_carne.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Papa",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Raja",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Requeson",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Frijol",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Champiñones",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$50.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Bistec de res ",
+    "descripcion": "1 Pza",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/quesadilla_frita_bistec.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Quesadillas Fritas",
+    "titulo": "Quesadillas Fritas Camarón",
+    "descripcion": "1 Pza",
+    "Precio": "$70.00",
+    "url de imagen": "/images/menu/quesadillas_fritas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas jamón, frijol y queso",
+    "descripcion": "1 Pza",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Pollo",
+    "descripcion": "1 Pza",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Pata",
+    "descripcion": "1 Pza",
+    "Precio": "$55.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Cueritos",
+    "descripcion": "1 Pza",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Carnitas",
+    "descripcion": "1 Pza",
+    "Precio": "$60.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Pata deshuesada (grande)",
+    "descripcion": "1 Pza",
+    "Precio": "$80.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "ANTOJITOS MEXICANOS",
+    "sub-menu": "Tostadas",
+    "titulo": "Tostadas Carne de pierna deshebrada",
+    "descripcion": "1 Pza",
+    "Precio": "$65.00",
+    "url de imagen": "/images/menu/tostadas.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Refresco",
+    "titulo": "Refresco Cola (lata) ",
+    "descripcion": "lata 355ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/refresco_lata_cola.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Refresco",
+    "titulo": "Refresco Manzana (lata) ",
+    "descripcion": "lata 355ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/refresco_lima-limon.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Refresco",
+    "titulo": "Refresco Toronja (lata) ",
+    "descripcion": "lata 355ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/refresco_lata_toronja.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Refresco",
+    "titulo": "Refresco Naranja (lata) ",
+    "descripcion": "lata 355ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/refresco_lata.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Agua Fresca",
+    "titulo": "Agua Fresca Sabor Jamaica (embotellada)",
+    "descripcion": "500ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/agua_sabor_embotellada.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Agua Fresca",
+    "titulo": "Agua Fresca Sabor Horchata rosa (embotellada)",
+    "descripcion": "500ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/agua_sabor_embotellada.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Agua Fresca",
+    "titulo": "Agua Fresca Sabor Limon (embotellada)",
+    "descripcion": "500ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/agua_sabor_embotellada.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Agua Fresca",
+    "titulo": "Agua Fresca Sabor Horchata de arroz (embotellada)",
+    "descripcion": "500ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/agua_sabor_embotellada.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Café",
+    "titulo": "Café de olla",
+    "descripcion": "400ml",
+    "Precio": "$25.00",
+    "url de imagen": "/images/menu/logonala-menu.avif"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Café con leche",
+    "titulo": "Café con leche (caliente)",
+    "descripcion": "400ml",
+    "Precio": "$30.00",
+    "url de imagen": "/images/menu/logonala-menu.avif"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Café con leche",
+    "titulo": "Café con leche (frio con hielos)",
+    "descripcion": "500ml",
+    "Precio": "$35.00",
+    "url de imagen": "/images/menu/logonala-menu.avif"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Agua Natural",
+    "titulo": "Agua natural ",
+    "descripcion": "500ml",
+    "Precio": "$20.00",
+    "url de imagen": "/images/menu/agua_sabor.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Leche con Chocolate",
+    "titulo": "Chocomilk",
+    "descripcion": "400ml",
+    "Precio": "$30.00",
+    "url de imagen": "/public/logos/logonala-menu.avif"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Leche con Frutas",
+    "titulo": "Licuado Frutas ",
+    "descripcion": "400ml",
+    "Precio": "$45.00",
+    "url de imagen": "/images/menu/licuado_fresa.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Jugo Natural",
+    "titulo": "Jugo Natural Naranja",
+    "descripcion": "400ml",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/jugo_naranja.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Jugo Natural",
+    "titulo": "Jugo Natural Toronja",
+    "descripcion": "400ml",
+    "Precio": "$40.00",
+    "url de imagen": "/images/menu/jugo_naranja.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Bionico con fruta",
+    "descripcion": "Yogurth con frutas y topping",
+    "Precio": "$75.00",
+    "url de imagen": "/images/menu/varios.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Escamochas",
+    "descripcion": "Chico",
+    "Precio": "$48.00",
+    "url de imagen": "/images/menu/varios.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Gaspacho",
+    "descripcion": "Chico",
+    "Precio": "$48.00",
+    "url de imagen": "/images/menu/varios.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Escamochas",
+    "descripcion": "Mediano",
+    "Precio": "$55.00",
+    "url de imagen": "/images/menu/varios2.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Gaspacho",
+    "descripcion": "Mediano",
+    "Precio": "$55.00",
+    "url de imagen": "/images/menu/varios2.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Escamochas",
+    "descripcion": "Grande",
+    "Precio": "$85.00",
+    "url de imagen": "/images/menu/varios1.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Postres",
+    "titulo": "Gaspacho",
+    "descripcion": "Grande",
+    "Precio": "$85.00",
+    "url de imagen": "/images/menu/varios1.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Cerveza",
+    "titulo": "Corona Light",
+    "descripcion": "Lata 355ml",
+    "Precio": "$35.00",
+    "url de imagen": "/images/menu/lata.webp"
+  },
+  {
+    "Menu": "BEBIDAS y POSTRES",
+    "sub-menu": "Cerveza",
+    "titulo": "Corona Lata",
+    "descripcion": "lata 355ml",
+    "Precio": "$35.00",
+    "url de imagen": "/images/menu/lata.webp"
+  }
+]

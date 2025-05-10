@@ -1,0 +1,145 @@
+﻿Menu,Sub-menu,Titulo,Detalles,Precio,image URL
+DESAYUNOS,Hot Cakes,Hot cakes Naturales (3pzs),libre de azucar,$60.00,/images/menu/hotcakes_naturales.webp
+DESAYUNOS,Hot Cakes,Hot Cakes Clasicos (3pzs),"Bañados de Cajeta, Nutella o Lechera",$70.00,/images/menu/hotcakes_clasicos.webp
+DESAYUNOS,Hot Cakes,Hot Cakes Salados (3pzs),Acompañados con jamón y/o tocino,$80.00,/images/menu/logonala-menu.avif
+DESAYUNOS,Crepa Dulce,Crepa de Cajeta,Con fruta del dia,$60.00,/images/menu/crepa_dulce_cajeta.webp
+DESAYUNOS,Crepa Dulce,Crepa de Chocolate ,Con fruta del dia,$60.00,/images/menu/crepa_dulce.webp
+DESAYUNOS,Huevos al Gusto,Huevos Estrellados o revueltos ,Acompañados con frijoles ,$65.00,/images/menu/huevos_estrellados.webp
+DESAYUNOS,Huevos al Gusto,Huevos Revueltos con jamón,"Acompañados con frijoles, (cerdo o pavo) queso.",$65.00,/images/menu/huevos.webp
+DESAYUNOS,Huevos al Gusto,Huevos Rancheros,"estrellados y montados sobre una tortilla, bañados con su salsa ranchera, compañados con frijoles ",$65.00,/images/menu/huevos.webp
+DESAYUNOS,Huevos al Gusto,Huevos Divorciados,Acompañados con frijoles ,$65.00,/images/menu/huevos.webp
+DESAYUNOS,Huevos al Gusto,Huevos con salsa verde y roja,Acompañados con frijoles ,$65.00,/images/menu/huevos.webp
+DESAYUNOS,Huevos al Gusto,Huevos con vegetales,Aderezos al gusto,$60.00,/images/menu/huevos.webp
+DESAYUNOS,Omelets,Omelet con queso manchego y jamón con tocino,Aderezos al gusto,$70.00,/images/menu/omelet_queso_jamon.webp
+DESAYUNOS,Omelets,Omelet con queso manchego y chorizo,Aderezos al gusto,$70.00,/images/menu/omelet_queso_manchego.webp
+DESAYUNOS,Omelets,Omelet con queso manchego y vegetales,Aderezos al gusto,$70.00,/images/menu/omelet_queso_manchego.webp
+DESAYUNOS,Omelets,Omelet Natural dorado,acompañado de crema batida y miel maple,$65.00,/images/menu/omelet.webp
+DESAYUNOS,Omelets,Omelet Natural con platano y chocolate,acompañado de crema batida y miel maple,$70.00,/images/menu/omelet.webp
+DESAYUNOS,Omelets,Omelet Frutas rojas,acompañado de crema batida y miel maple,$70.00,/images/menu/omelet.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Verdes - Estilo Méxicano,Estilo México,$50.00,/images/menu/chilaquiles_verdes.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Verdes y acompañados de frijoles y queso,Estilo México,$60.00,/images/menu/chilaquiles_verdes.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Rojos - Estilo Méxicano,Estilo México,$50.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Rojos y acompañados de frijoles y queso,Estilo México,$60.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles habanero (muy picosos) ,Acompañados de frijoles y queso - Estilo México,$60.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Rojos con huevo,Estilo México,$65.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Verdes con huevo,Estilo México,$65.00,/images/menu/chilaquiles_verdes.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles Con pollo o carne deshebrada,Estilo México,$70.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Chilaquiles ,Chilaquiles con bistec y acompañados de frijoles y queso,Estilo México,$75.00,/images/menu/chilaquiles_rojos.webp
+DESAYUNOS,Molletes ,Molletes de frijoles con queso gratinado,Salsa pico de gallo,$40.00,/images/menu/molletes__frijoles_gratinados.webp
+DESAYUNOS,Molletes ,Mollete de Chilaquiles con queso gratinado,Salsa pico de gallo,$50.00,/images/menu/molletes__frijoles_gratinados.webp
+DESAYUNOS,Molletes ,Mollete con jamón  y queso gratinado,Salsa pico de gallo,$50.00,/images/menu/molletes__frijoles_gratinados.webp
+DESAYUNOS,Molletes ,Mollete con bistec y queso gratinado,Salsa pico de gallo,$50.00,/images/menu/molletes__frijoles_gratinados.webp
+DESAYUNOS,Molletes ,Mollete dulce,"Cajeta, mermelada, Lechera",$40.00,/images/menu/molletes_dulces.webp
+DESAYUNOS,Clasicos del Menú,"Panela asada, bañada en salsa y acompañada con frijoles",Salsa pico de gallo,$60.00,/images/menu/panela_asada.webp
+DESAYUNOS,Clasicos del Menú,Enchiladas suizas (3 pzs),Salsa pico de gallo,$60.00,/images/menu/enchiladas.webp
+DESAYUNOS,Clasicos del Menú,Enfrijoladas (3pzs),Salsa pico de gallo,$50.00,/images/menu/enfrijoladas.webp
+DESAYUNOS,Clasicos del Menú,Bistec de res con frijol y ensalda,Salsa pico de gallo,$70.00,/images/menu/logonala-menu.avif
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Buche,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada_buche.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Carne surtida,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Carne,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Pancita,"Acompañadas con cebolla desflemada, col, limones y salsa.",$80.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Lengua,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Pollo,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada_pollo.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Panela,"Acompañadas con cebolla desflemada, col, limones y salsa.",$70.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Costilla,"Acompañadas con cebolla desflemada, col, limones y salsa.",$75.00,/images/menu/torta_ahogada_costilla.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Camaron,"Acompañadas con cebolla desflemada, col, limones y salsa.",$100.00,/images/menu/torta_ahogada.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Carne (mini),"Acompañadas con cebolla desflemada, col, limones y salsa.",$40.00,/images/menu/torta_ahogada_mini.webp
+TRADICIONALES,Tortas Ahogadas ,Torta Ahogada Camaron (mini),"Acompañadas con cebolla desflemada, col, limones y salsa.",$50.00,/images/menu/torta_ahogada_mini.webp
+TRADICIONALES,Carnitas (Orden),Carnitas (Orden) Familiar (1Kg) surtida,"Inluye 1/2 kg de tortillas, frijoles y salsa",$500.00,/images/menu/carnitas.webp
+TRADICIONALES,Carnitas (Orden),Carnitas (Orden) Grande 400 gramos ,"Incluye 10 tortillas, frijoles y salsa",$210.00,/images/menu/carnitas.webp
+TRADICIONALES,Carnitas (Orden),Carnitas (Orden) Chica 200 gramos,"Incluye 5 tortillas, frijoles y salsa",$160.00,/images/menu/carnitas.webp
+TRADICIONALES,Tacos dorados,Tacos dorados Sencillos (frijol),acompañadas con lechuga y salsa,$15.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+TRADICIONALES,Tacos dorados,Tacos dorados Sencillos (requeson),acompañadas con lechuga y salsa,$15.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+TRADICIONALES,Tacos dorados,Tacos dorados Sencillos (papa),acompañadas con lechuga y salsa,$15.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+TRADICIONALES,Tacos dorados,Tacos dorados Con Carne,acompañadas con lechuga y salsa,$30.00,/images/menu/tacos_dorados_carne.webp
+TRADICIONALES,Tacos dorados,Tacos dorados Con Camaron,acompañadas con lechuga y salsa,$40.00,/images/menu/tacos_dorados.webp
+TRADICIONALES,Tacos blandos,Tacos blandos Sencillos (frijol),Con tortilla recién hecha ,$20.00,/images/menu/tacos_blandos.webp
+TRADICIONALES,Tacos blandos,Tacos blandos Sencillos (requeson),Con tortilla recién hecha ,$20.00,/images/menu/tacos_blandos.webp
+TRADICIONALES,Tacos blandos,Tacos blandos Sencillos (papa),Con tortilla recién hecha ,$20.00,/images/menu/tacos_blandos.webp
+TRADICIONALES,Tacos blandos,Tacos blandos Con carne de tu elección,Con tortilla recién hecha ,$25.00,/images/menu/tacos_blandos.webp
+TRADICIONALES,Tacos blandos,Tacos blandos Con Camaron,Con tortilla recién hecha ,$40.00,/images/menu/tacos_blandos.webp
+TRADICIONALES,Tacos Barbacoa,Tacos Barbacoa Blando,Acompañados de cebolla dorada,$25.00,/images/menu/tacos_barbacoa.webp
+TRADICIONALES,Tacos Barbacoa,Tacos Barbacoa Dorado,Acompañados de cebolla dorada,$25.00,/images/menu/tacos_barbacoa.webp
+TRADICIONALES,Quesadilla Maiz,Quesadilla Maiz solo queso,Con tortilla recién hecha ,$40.00,/images/menu/quesadilla_maiz.webp
+TRADICIONALES,Quesadilla Maiz,Quesadilla Maiz Rajas,Con tortilla recién hecha ,$40.00,/images/menu/quesadilla_maiz.webp
+TRADICIONALES,Quesadilla Maiz,Quesadilla Maiz Champiñones,Con tortilla recién hecha ,$40.00,/images/menu/quesadilla_maiz.webp
+TRADICIONALES,Quesadilla Maiz,Quesadilla Maiz Con la carne de tu elección,Con tortilla recién hecha ,$45.00,/images/menu/quesadilla_maiz.webp
+TRADICIONALES,Quesadilla Maiz,Quesadilla Maiz Con Camaron,Con tortilla recién hecha ,$60.00,/images/menu/quesadilla_maiz.webp
+TRADICIONALES,Lonches,Lonches Jamon,Estilo México,$45.00,/images/menu/lonche_jamon.webp
+TRADICIONALES,Lonches,Lonches Chilaquiles,Estilo México,$45.00,/images/menu/lonches.webp
+TRADICIONALES,Lonches,Lonches Pierna,Estilo México,$50.00,/images/menu/lonches.webp
+TRADICIONALES,Lonches,Lonches Panela,Estilo México,$45.00,/images/menu/lonches.webp
+ANTOJITOS MEXICANOS,Pozole Grande,Pozole Grande Surtido,Grande,$100.00,/images/menu/pozole.webp
+ANTOJITOS MEXICANOS,Pozole Grande,"Pozole Grande Cabeza(Trompa, Lengua, oreja, cachete)",Grande,$100.00,/images/menu/pozole.webp
+ANTOJITOS MEXICANOS,Pozole Grande,Pozole Grande Carnaza,Grande,$100.00,/images/menu/pozole.webp
+ANTOJITOS MEXICANOS,Pozole Grande,Pozole Grande Pata deshuesada,Grande,$105.00,/images/menu/pozole.webp
+ANTOJITOS MEXICANOS,Pozole Grande,Pozole Grande Pozole sin carne,Grande,$65.00,/images/menu/pozole.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,Pozole Mediano Mixto / Surtido,Mediano,$85.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,Pozole Mediano Surtido,Mediano,$85.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,"Pozole Mediano Cabeza(Trompa, Lengua, oreja, cachete)",Mediano,$90.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,Pozole Mediano Carnaza,Mediano,$90.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,Pozole Mediano Pata deshuesada,Mediano,$85.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Mediano,Pozole Mediano Pozole sin carne,Mediano,$60.00,/images/menu/pozole_mediano.webp
+ANTOJITOS MEXICANOS,Pozole Chico,Pozole Chico Mixto / Surtido,Chico,$60.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Pozole Chico,Pozole Chico Surtido,Chico,$60.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Pozole Chico,"Pozole Chico Cabeza(Trompa, Lengua, oreja, cachete)",Chico,$60.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Pozole Chico,Pozole Chico Carnaza,Chico,$60.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Pozole Chico,Pozole Chico Pata deshuesada,Chico,$60.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Pozole Chico,Pozole Chico Pozole sin carne,Chico,$50.00,/images/menu/pozole_chico.webp
+ANTOJITOS MEXICANOS,Enchiladas,Enchiladas Queso y cebolla,1 Pza,$18.00,/images/menu/enchiladas.webp
+ANTOJITOS MEXICANOS,Enchiladas,Enchiladas carne o pollo,1 Pza,$18.00,/images/menu/enchiladas.webp
+ANTOJITOS MEXICANOS,Tacos Dorados,Tacos Dorados Papa,1 Pza,$18.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+ANTOJITOS MEXICANOS,Tacos Dorados,Tacos Dorados Raja,1 Pza,$18.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+ANTOJITOS MEXICANOS,Tacos Dorados,Tacos Dorados Requeson,1 Pza,$18.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+ANTOJITOS MEXICANOS,Tacos Dorados,Tacos Dorados Frijol,1 Pza,$18.00,/images/menu/tacos_dorados_papa_raja_frijol_requeson.webp
+ANTOJITOS MEXICANOS,Tacos Dorados,Tacos Dorados Carne o pollo,1 Pza,$23.00,/images/menu/tacos_dorados.webp
+ANTOJITOS MEXICANOS,Flautas,Flautas Papa,1 Pza,$28.00,/images/menu/flautas.webp
+ANTOJITOS MEXICANOS,Flautas,Flautas Raja,1 Pza,$28.00,/images/menu/flautas.webp
+ANTOJITOS MEXICANOS,Flautas,Flautas Requeson,1 Pza,$28.00,/images/menu/flautas.webp
+ANTOJITOS MEXICANOS,Flautas,Flautas Frijol,1 Pza,$28.00,/images/menu/flautas.webp
+ANTOJITOS MEXICANOS,Flautas,Flautas Carne o pollo,1 Pza,$35.00,/images/menu/flautas.webp
+ANTOJITOS MEXICANOS,Sopes,Sopes Papa,1 Pza,$20.00,/images/menu/sopes.webp
+ANTOJITOS MEXICANOS,Sopes,Sopes Raja,1 Pza,$20.00,/images/menu/sopes.webp
+ANTOJITOS MEXICANOS,Sopes,Sopes Requeson,1 Pza,$20.00,/images/menu/sopes.webp
+ANTOJITOS MEXICANOS,Sopes,Sopes Frijol,1 Pza,$20.00,/images/menu/sopes.webp
+ANTOJITOS MEXICANOS,Sopes,Sopes Carne o pollo,1 Pza,$25.00,/images/menu/sopes_carne.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Papa,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Raja,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Requeson,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Frijol,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Champiñones,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Pollo,1 Pza,$50.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Bistec de res ,1 Pza,$60.00,/images/menu/quesadilla_frita_bistec.webp
+ANTOJITOS MEXICANOS,Quesadillas Fritas,Quesadillas Fritas Camarón,1 Pza,$70.00,/images/menu/quesadillas_fritas.webp
+ANTOJITOS MEXICANOS,Tostadas,"Tostadas jamón, frijol y queso",1 Pza,$45.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Pollo,1 Pza,$45.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Pata,1 Pza,$55.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Cueritos,1 Pza,$45.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Carnitas,1 Pza,$60.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Pata deshuesada (grande),1 Pza,$80.00,/images/menu/tostadas.webp
+ANTOJITOS MEXICANOS,Tostadas,Tostadas Carne de pierna deshebrada,1 Pza,$65.00,/images/menu/tostadas.webp
+BEBIDAS y POSTRES,Refresco,Refresco Cola (lata) ,lata 355ml,$25.00,/images/menu/refresco_lata_cola.webp
+BEBIDAS y POSTRES,Refresco,Refresco Manzana (lata) ,lata 355ml,$25.00,/images/menu/refresco_lima-limon.webp
+BEBIDAS y POSTRES,Refresco,Refresco Toronja (lata) ,lata 355ml,$25.00,/images/menu/refresco_lata_toronja.webp
+BEBIDAS y POSTRES,Refresco,Refresco Naranja (lata) ,lata 355ml,$25.00,/images/menu/refresco_lata.webp
+BEBIDAS y POSTRES,Agua Fresca,Agua Fresca Sabor Jamaica (embotellada),500ml,$25.00,/images/menu/agua_sabor_embotellada.webp
+BEBIDAS y POSTRES,Agua Fresca,Agua Fresca Sabor Horchata rosa (embotellada),500ml,$25.00,/images/menu/agua_sabor_embotellada.webp
+BEBIDAS y POSTRES,Agua Fresca,Agua Fresca Sabor Limon (embotellada),500ml,$25.00,/images/menu/agua_sabor_embotellada.webp
+BEBIDAS y POSTRES,Agua Fresca,Agua Fresca Sabor Horchata de arroz (embotellada),500ml,$25.00,/images/menu/agua_sabor_embotellada.webp
+BEBIDAS y POSTRES,Café,Café de olla,400ml,$25.00,/images/menu/logonala-menu.avif
+BEBIDAS y POSTRES,Café con leche,Café con leche (caliente),400ml,$30.00,/images/menu/logonala-menu.avif
+BEBIDAS y POSTRES,Café con leche,Café con leche (frio con hielos),500ml,$35.00,/images/menu/logonala-menu.avif
+BEBIDAS y POSTRES,Agua Natural,Agua natural ,500ml,$20.00,/images/menu/agua_sabor.webp
+BEBIDAS y POSTRES,Leche con Chocolate,Chocomilk,400ml,$30.00,/public/logos/logonala-menu.avif
+BEBIDAS y POSTRES,Leche con Frutas,Licuado Frutas ,400ml,$45.00,/images/menu/licuado_fresa.webp
+BEBIDAS y POSTRES,Jugo Natural,Jugo Natural Naranja,400ml,$40.00,/images/menu/jugo_naranja.webp
+BEBIDAS y POSTRES,Jugo Natural,Jugo Natural Toronja,400ml,$40.00,/images/menu/jugo_naranja.webp
+BEBIDAS y POSTRES,Postres,Bionico con fruta,Yogurth con frutas y topping,$75.00,/images/menu/varios.webp
+BEBIDAS y POSTRES,Postres,Escamochas,Chico,$48.00,/images/menu/varios.webp
+BEBIDAS y POSTRES,Postres,Gaspacho,Chico,$48.00,/images/menu/varios.webp
+BEBIDAS y POSTRES,Postres,Escamochas,Mediano,$55.00,/images/menu/varios2.webp
+BEBIDAS y POSTRES,Postres,Gaspacho,Mediano,$55.00,/images/menu/varios2.webp
+BEBIDAS y POSTRES,Postres,Escamochas,Grande,$85.00,/images/menu/varios1.webp
+BEBIDAS y POSTRES,Postres,Gaspacho,Grande,$85.00,/images/menu/varios1.webp
+BEBIDAS y POSTRES,Cerveza,Corona Light,Lata 355ml,$35.00,/images/menu/lata.webp
+BEBIDAS y POSTRES,Cerveza,Corona Lata,lata 355ml,$35.00,/images/menu/lata.webp
