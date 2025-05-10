@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Poiret_One } from "next/font/google";
 
@@ -110,12 +111,12 @@ export default function UbicacionPage() {
         </div>
 
         <div className="mt-8 text-center">
-          <a
+          <Link
             href="/"
             className="px-6 py-2 bg-[#6C3A3A] text-white rounded-lg font-medium hover:bg-[#6C3A3A]/90 transition"
           >
             Volver al Inicio
-          </a>
+          </Link>
         </div>
       </section>
     </main>

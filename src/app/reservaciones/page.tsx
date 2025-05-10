@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Poiret_One, Amatic_SC } from "next/font/google"; // Amatic_SC podría no ser necesaria aquí, pero Poiret_One sí.
 
@@ -89,12 +90,12 @@ export default function ReservacionesPage() {
       </section>
 
       <div className="mt-12 text-center">
-        <a
+        <Link
           href="/"
           className="px-6 py-2 bg-[#6C3A3A] text-white rounded-lg font-medium hover:bg-[#6C3A3A]/90 transition"
         >
           Volver al Inicio
-        </a>
+        </Link>
       </div>
     </main>
   );

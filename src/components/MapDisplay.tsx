@@ -7,8 +7,8 @@ import { useState, useEffect } from 'react';
 
 // Fix for default icon issue with Webpack/Next.js
 // You might need to copy marker-icon.png, marker-icon-2x.png, and marker-shadow.png
-// from 'leaflet/dist/images' to your public/images directory
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+ // from 'leaflet/dist/images' to your public/images directory
+delete (L.Icon.Default.prototype as { _getIconUrl?: unknown })._getIconUrl;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: '/images/marker-icon-2x.png', // Adjust path if needed
