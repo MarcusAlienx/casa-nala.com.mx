@@ -5,6 +5,8 @@ import type React from "react";
 import { useState, useEffect, useRef } from "react"; // Added useRef
 import { Poiret_One, Amatic_SC } from "next/font/google";
 import dynamic from 'next/dynamic';
+// Importar iconos para colapsar/expandir
+import { ChevronUp, ChevronDown, ShoppingCart } from 'lucide-react';
 
 // MapDisplay import remains for other parts of the page if needed elsewhere,
 // but it's not directly used in the menu section itself.
@@ -97,6 +99,7 @@ export default function Home() {
   const isClient = useIsClient();
   const menuContainerRef = useRef<HTMLDivElement>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Estado para el menú móvil
+  const [isCartExpanded, setIsCartExpanded] = useState(false); // Estado para expandir/colapsar el carrito
 
   // --- Estados para el menú y carga ---
   const [menuData, setMenuData] = useState<MenuData | null>(null); // Tipo actualizado para la nueva estructura anidada
@@ -140,9 +143,11 @@ export default function Home() {
   }, [isClient]); // Dependencia isClient para asegurar que se ejecute en el cliente
   // ---
 
-  // Calculador del total del pedido (sin cambios)
+  // Calculador del subtotal y total del pedido
+  const calcularSubtotal = () => carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+
   const calcularTotal = () => {
-    const subtotal = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+    const subtotal = calcularSubtotal();
     const costoEnvio = opcionEntrega === 'domicilio' ? 40 : 0;
     return subtotal + costoEnvio;
   };
@@ -912,79 +917,90 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Carrito flotante - visible solo en paso 1 (sin cambios) */}
-      {paso === 'menu' && (
-        <aside className="fixed bottom-6 right-6 w-72 bg-[#fff] shadow-2xl rounded-xl p-5 border border-[#D9D4CE] z-50">
-          <div className="font-bold text-lg text-[#6C3A3A] mb-1">Tu Pedido</div>
-          {carrito.length === 0 ? (
-            <div className="text-gray-500">Aún no has agregado platillos.</div>
-          ) : (
-            <ul className="space-y-2 max-h-52 overflow-y-auto pr-2">
-              {carrito.map((item) => (
-                <li
-                  key={item.id}
-                  className="flex justify-between items-center border-b border-[#D9D4CE] pb-1 group relative"
-                >
-                  <div className="flex-1 mr-2">
-                    <span className="font-medium text-[#6C3A3A] text-sm leading-tight block">
-                      {item.nombre}
-                    </span>
-                     {item.detalles && <span className="text-xs text-gray-500 block">{item.detalles.substring(0, 20)}{item.detalles.length > 20 ? '...' : ''}</span>}
-                    <div className="flex items-center gap-2 mt-1">
-                      <button
-                        onClick={() => quitar(item)}
-                        className="px-1.5 py-0.5 rounded bg-[#d7a556] text-white text-xs"
-                        type="button" aria-label="Quitar uno"
-                      > - </button>
-                      <span className="text-[#6C3A3A] text-sm">{item.cantidad}</span>
-                      <button
-                        onClick={() => agregar(item)}
-                        className="px-1.5 py-0.5 rounded bg-[#9DA17B] text-white text-xs"
-                        type="button" aria-label="Agregar uno"
-                      > + </button>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-end">
-                    <span className="text-[#D7A556] font-bold text-sm">
-                      ${(item.precio * item.cantidad).toFixed(2)}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => quitarItemCarrito(item.id)}
-                      className="text-xs text-red-500 mt-1 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"
-                      aria-label="Eliminar del carrito"
-                    >
-                      Eliminar
-                    </button>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-          <div className="mt-4 border-t border-[#D9D4CE] pt-2 flex flex-col gap-1">
-            <div className="flex justify-between">
-              <span className="font-medium">Subtotal</span>
-              <span>${carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0).toFixed(2)}</span>
-            </div>
-            {opcionEntrega === 'domicilio' && (
-              <div className="flex justify-between text-sm">
-                <span>Entrega a domicilio</span>
-                <span>$40.00</span>
-              </div>
-            )}
-            <div className="flex justify-between items-center font-bold text-[#6C3A3A] border-t border-[#D9D4CE] pt-1 mt-1">
-              <span>Total</span>
-              <span>${calcularTotal().toFixed(2)}</span>
-            </div>
-          </div>
-          <button
-            className="mt-4 w-full py-2 rounded bg-[#6C3A3A] text-[#F5E8D2] text-lg font-semibold hover:bg-[#9DA17B] transition disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={carrito.length === 0}
-            type="button"
-            onClick={continuarAPaso2}
+      {/* Carrito flotante - visible solo en paso 1 */}
+      {paso === 'menu' && carrito.length > 0 && ( // Solo mostrar si hay ítems en el carrito
+        <aside className={`fixed bottom-6 right-6 w-72 bg-[#fff] shadow-2xl rounded-xl p-4 border border-[#D9D4CE] z-50 transition-all duration-300 ease-in-out ${isCartExpanded ? 'max-h-[80vh]' : 'max-h-min'}`}> {/* Ajustada altura y padding */}
+          {/* Encabezado del carrito (siempre visible) */}
+          <div
+            className="flex justify-between items-center cursor-pointer text-[#6C3A3A] font-bold text-lg mb-2"
+            onClick={() => setIsCartExpanded(!isCartExpanded)}
           >
-            Continuar
-          </button>
+            <div className="flex items-center gap-2">
+              <ShoppingCart className="w-5 h-5" />
+              <span>Tu Pedido ({carrito.length} {carrito.length === 1 ? 'ítem' : 'ítems'})</span>
+            </div>
+            {isCartExpanded ? <ChevronDown className="w-5 h-5" /> : <ChevronUp className="w-5 h-5" />}
+          </div>
+
+          {/* Contenido expandible del carrito */}
+          {isCartExpanded && (
+            <>
+              <ul className="space-y-2 max-h-52 overflow-y-auto pr-2 border-t border-[#D9D4CE] pt-3"> {/* Añadido borde superior y padding */}
+                {carrito.map((item) => (
+                  <li
+                    key={item.id}
+                    className="flex justify-between items-center border-b border-[#D9D4CE] pb-1 group relative"
+                  >
+                    <div className="flex-1 mr-2">
+                      <span className="font-medium text-[#6C3A3A] text-sm leading-tight block">
+                        {item.nombre}
+                      </span>
+                       {item.detalles && <span className="text-xs text-gray-500 block">{item.detalles.substring(0, 20)}{item.detalles.length > 20 ? '...' : ''}</span>}
+                      <div className="flex items-center gap-2 mt-1">
+                        <button
+                          onClick={() => quitar(item)}
+                          className="px-1.5 py-0.5 rounded bg-[#d7a556] text-white text-xs"
+                          type="button" aria-label="Quitar uno"
+                        > - </button>
+                        <span className="text-[#6C3A3A] text-sm">{item.cantidad}</span>
+                        <button
+                          onClick={() => agregar(item)}
+                          className="px-1.5 py-0.5 rounded bg-[#9DA17B] text-white text-xs"
+                          type="button" aria-label="Agregar uno"
+                        > + </button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-end">
+                      <span className="text-[#D7A556] font-bold text-sm">
+                        ${(item.precio * item.cantidad).toFixed(2)}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => quitarItemCarrito(item.id)}
+                        className="text-xs text-red-500 mt-1 hover:underline opacity-0 group-hover:opacity-100 transition-opacity"
+                        aria-label="Eliminar del carrito"
+                      >
+                        Eliminar
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-3 border-t border-[#D9D4CE] pt-2 flex flex-col gap-1"> {/* Ajustado margen superior y padding */}
+                {opcionEntrega === 'domicilio' && (
+                  <div className="flex justify-between text-sm">
+                    <span>Entrega a domicilio</span>
+                    <span>$40.00</span>
+                  </div>
+                )}
+                <div className="flex justify-between items-center font-bold text-[#6C3A3A] border-t border-[#D9D4CE] pt-1 mt-1">
+                  <span>Total</span>
+                  <span>${calcularTotal().toFixed(2)}</span>
+                </div>
+              </div>
+            </>
+          )}
+
+          {/* Botón Continuar - visible solo si hay ítems y el carrito está expandido */}
+          {isCartExpanded && carrito.length > 0 && (
+            <button
+              className="mt-4 w-full py-2 rounded bg-[#6C3A3A] text-[#F5E8D2] text-lg font-semibold hover:bg-[#9DA17B] transition disabled:opacity-50 disabled:cursor-not-allowed"
+              type="button"
+              onClick={continuarAPaso2}
+            >
+              Continuar
+            </button>
+          )}
         </aside>
       )}
     </main>
