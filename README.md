@@ -1,78 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Casa Nala - Sitio Web y Menú Digital
 
-## Getting Started
+¡Bienvenido al proyecto del sitio web de Casa Nala! Esta aplicación, construida con Next.js, no solo sirve como la página de presentación del restaurante, sino que también gestiona un menú digital interactivo y un formulario para realizar pedidos.
 
-First, run the development server:
+## Tabla de Contenidos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Visión General del Proyecto](#visión-general-del-proyecto)
+- [Cómo Empezar (Desarrollo Local)](#cómo-empezar-desarrollo-local)
+- [Cómo Actualizar el Menú](#cómo-actualizar-el-menú)
+  - [Estructura del Menú](#estructura-del-menú)
+  - [Añadir o Modificar un Platillo](#añadir-o-modificar-un-platillo)
+  - [Gestionar Imágenes](#gestionar-imágenes)
+- [Variables de Entorno](#variables-de-entorno)
+- [Despliegue en Netlify](#despliegue-en-netlify)
+
+---
+
+### Visión General del Proyecto
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Estilos:** [Tailwind CSS](https://tailwindcss.com/) con [shadcn/ui](https://ui.shadcn.com/)
+- **Gestor de Paquetes:** [npm](https://www.npmjs.com/)
+- **Hosting:** [Netlify](https://www.netlify.com/)
+
+El proyecto está estructurado para que la actualización del contenido, especialmente el menú, sea lo más sencilla posible, modificando un único archivo.
+
+### Cómo Empezar (Desarrollo Local)
+
+Sigue estos pasos para ejecutar el proyecto en tu máquina local.
+
+1.  **Clona el Repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/casa-nala.git
+    cd casa-nala
+    ```
+
+2.  **Configura las Variables de Entorno:**
+    -   Crea una copia del archivo `.env.example` y renómbrala a `.env.local`.
+    -   Abre `.env.local` y rellena las variables con tus credenciales. Consulta la sección [Variables de Entorno](#variables-de-entorno) para más detalles.
+
+3.  **Instala las Dependencias:**
+    Asegúrate de tener Node.js instalado. Luego, ejecuta:
+    ```bash
+    npm install
+    ```
+
+4.  **Inicia el Servidor de Desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Abre tu Navegador:**
+    Visita [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
+
+---
+
+### Cómo Actualizar el Menú
+
+La gestión del menú es el corazón de este proyecto. Para realizar cualquier cambio, solo necesitas editar un archivo: `src/app/api/menu/menu.json`.
+
+El sistema está diseñado para leer este archivo y construir dinámicamente las secciones y platillos en el sitio web.
+
+#### Estructura del Menú
+
+El archivo `menu.json` es una lista de objetos, donde cada objeto representa un platillo y tiene la siguiente estructura:
+
+```json
+{
+  "Menu": "DESAYUNOS",
+  "sub-menu": "Hot Cakes",
+  "titulo": "Hot cakes Naturales (3pzs)",
+  "descripcion": "libre de azucar",
+  "Precio": "$60.00",
+  "url de imagen": "/images/menu/hotcakes_naturales.webp"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   `"Menu"`: La categoría principal (ej. "DESAYUNOS", "TRADICIONALES").
+-   `"sub-menu"`: La sub-categoría dentro del menú principal (ej. "Hot Cakes", "Tortas Ahogadas").
+-   `"titulo"`: El nombre del platillo que se mostrará.
+-   `"descripcion"`: Una breve descripción del platillo.
+-   `"Precio"`: El precio del platillo, como texto (ej. `"$60.00"`).
+-   `"url de imagen"`: La ruta a la imagen del platillo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Añadir o Modificar un Platillo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Abre el archivo:** `src/app/api/menu/menu.json`.
+2.  **Para modificar un platillo existente:** Busca el platillo en la lista y edita los valores de los campos que desees cambiar (por ejemplo, el `"Precio"` o la `"descripcion"`).
+3.  **Para añadir un nuevo platillo:**
+    -   Copia un objeto existente para mantener la estructura.
+    -   Pégalo al final de la lista (o donde prefieras).
+    -   Asegúrate de que haya una coma `,` después del objeto anterior.
+    -   Modifica todos los campos para reflejar los datos del nuevo platillo. Si pertenece a una nueva categoría o sub-categoría, simplemente escribe el nuevo nombre en los campos `"Menu"` o `"sub-menu"`, y el sistema creará la sección automáticamente.
 
-## Learn More
+#### Gestionar Imágenes
 
-To learn more about Next.js, take a look at the following resources:
+1.  **Prepara tu imagen:**
+    -   Asegúrate de que la imagen sea de buena calidad pero esté optimizada para la web (formato `.webp` es ideal para un buen balance entre calidad y tamaño).
+    -   El nombre del archivo debe ser descriptivo y en minúsculas (ej. `torta_ahogada_pollo.webp`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  **Sube la imagen:**
+    -   Coloca tu nueva imagen en la carpeta: `public/images/menu/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Asigna la imagen al platillo:**
+    -   En el archivo `menu.json`, busca el platillo correspondiente.
+    -   Actualiza el campo `"url de imagen"` para que apunte a tu nueva imagen. La ruta debe empezar con `/images/menu/`. Por ejemplo: `"/images/menu/torta_ahogada_pollo.webp"`.
 
-## Environment Variables Configuration
+---
 
-For the application to function correctly, especially for sending order confirmation emails and generating WhatsApp links, you need to set up environment variables.
+### Variables de Entorno
 
-Create a file named `.env.local` in the root of your project and add the following variables, replacing the placeholder values with your actual credentials and information:
+Para que el formulario de pedidos por correo y el enlace de WhatsApp funcionen, debes configurar las siguientes variables en un archivo `.env.local` en la raíz del proyecto:
 
 ```env
-# Email Server Configuration (for sending order emails via SMTP)
+# Configuración del servidor de correo (para enviar correos de pedidos)
 EMAIL_SERVER_USER=tu_usuario_smtp@example.com
 EMAIL_SERVER_PASSWORD=tu_contraseña_smtp
-EMAIL_TO=correo_destino_pedidos@example.com # Email address to receive order notifications
+EMAIL_TO=correo_destino_pedidos@example.com
 
+# Configuración SMTP
 EMAIL_SMTP_HOST=smtp.example.com
-EMAIL_SMTP_PORT=465 # Or 587, depending on your provider
-EMAIL_SMTP_SECURE=true # true for port 465 (SSL), false for port 587 (TLS/STARTTLS)
+EMAIL_SMTP_PORT=465
+EMAIL_SMTP_SECURE=true
 
-# WhatsApp Configuration
-NEXT_PUBLIC_WHATSAPP_NUMBER=521XXXXXXXXXX # Your WhatsApp number incluindo country code (e.g., 521 for Mexico + mobile)
+# Configuración de WhatsApp
+NEXT_PUBLIC_WHATSAPP_NUMBER=521XXXXXXXXXX # Tu número de WhatsApp con código de país
 ```
 
-**Important Notes:**
-- Ensure `.env.local` is included in your `.gitignore` file to prevent committing sensitive credentials.
-- For Gmail, it's highly recommended to use an "App Password" instead of your main account password. You might also need to configure "Less secure app access" if not using an App Password, though this is less secure and being phased out by Google.
-- The `EMAIL_TO` variable is where order notification emails will be sent.
-- `NEXT_PUBLIC_WHATSAPP_NUMBER` is used to generate the click-to-chat WhatsApp link. Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser.
+**Importante:**
+- El archivo `.env.local` **no debe** ser subido a Git. Ya está incluido en `.gitignore`.
+- Para Gmail, se recomienda usar una "Contraseña de Aplicación".
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Despliegue en Netlify
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El proyecto está configurado para un despliegue continuo desde GitHub a Netlify.
 
-## Deploy on Netlify
-
-To deploy this project on Netlify:
-
-1.  **Connect your Git repository** to Netlify.
-2.  **Build Settings:**
-    *   **Build command:** `npm run build` (or `yarn build`, `pnpm build`, `bun run build` depending on your package manager).
-    *   **Publish directory:** `.next`
-3.  **Environment Variables:**
-    *   You **must** configure the same environment variables in your Netlify site settings as defined in your `.env.local` file (e.g., `EMAIL_SERVER_USER`, `EMAIL_SERVER_PASSWORD`, `EMAIL_TO`, `EMAIL_SMTP_HOST`, `EMAIL_SMTP_PORT`, `EMAIL_SMTP_SECURE`, `NEXT_PUBLIC_WHATSAPP_NUMBER`).
-    *   Go to your site's settings on Netlify -> Build & deploy -> Environment -> Environment variables.
-4.  **Next.js Runtime:**
-    *   Netlify automatically detects and uses the Next.js Runtime for App Router projects. Ensure your Netlify account has this feature enabled if you encounter issues.
-
-Refer to the [Netlify documentation for Next.js](https://docs.netlify.com/integrations/frameworks/next-js/overview/) for the most up-to-date deployment instructions.
+1.  **Conecta tu Repositorio:** Asegúrate de que tu repositorio de GitHub esté conectado a tu sitio en Netlify.
+2.  **Configuración de Build:** Netlify debería detectar automáticamente que es un proyecto de Next.js. La configuración estándar es:
+    -   **Comando de Build:** `npm run build`
+    -   **Directorio de Publicación:** `.next`
+3.  **Variables de Entorno:**
+    -   Ve a la configuración de tu sitio en Netlify → `Build & deploy` → `Environment`.
+    -   Añade las mismas variables de entorno que tienes en tu archivo `.env.local`. Esto es **crucial** para que la funcionalidad de correos y WhatsApp funcione en producción.

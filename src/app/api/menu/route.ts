@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { NextResponse } from "next/server";
+import fs from "node:fs";
+import path from "node:path";
 
 // Definir la interfaz para los elementos tal como se espera que estén en el JSON (reflejando el nuevo CSV)
 interface RawMenuItem {
@@ -33,14 +33,17 @@ interface MenuData {
 
 export async function GET(request: Request) {
   try {
-    const jsonFilePath = path.join(process.cwd(), 'src/app/api/menu/menu.json');
+    const jsonFilePath = path.join(process.cwd(), "src/app/api/menu/menu.json");
 
     if (!fs.existsSync(jsonFilePath)) {
-      console.error('Error: Menu JSON file not found at', jsonFilePath);
-      return NextResponse.json({ error: 'Menu data not found.' }, { status: 404 });
+      console.error("Error: Menu JSON file not found at", jsonFilePath);
+      return NextResponse.json(
+        { error: "Menu data not found." },
+        { status: 404 },
+      );
     }
 
-    const fileContent = fs.readFileSync(jsonFilePath, { encoding: 'utf-8' });
+    const fileContent = fs.readFileSync(jsonFilePath, { encoding: "utf-8" });
     const rawMenuArray: RawMenuItem[] = JSON.parse(fileContent);
 
     const processedMenu: MenuData = {};
@@ -57,16 +60,18 @@ export async function GET(request: Request) {
         processedMenu[categoriaPrincipal][subCategoria] = [];
       }
 
-      let precioNumerico = NaN;
-      if (typeof rawItem.Precio === 'string') {
-        precioNumerico = parseFloat(rawItem.Precio.replace('$', '').replace(',', ''));
-      } else if (typeof rawItem.Precio === 'number') {
+      let precioNumerico = Number.NaN;
+      if (typeof rawItem.Precio === "string") {
+        precioNumerico = Number.parseFloat(
+          rawItem.Precio.replace("$", "").replace(",", ""),
+        );
+      } else if (typeof rawItem.Precio === "number") {
         precioNumerico = rawItem.Precio;
       }
 
       const menuItem: ProcessedMenuItem = {
         id: `item-${itemIdCounter++}`, // ID único simple
-        nombre: rawItem.titulo || 'Platillo sin nombre',
+        nombre: rawItem.titulo || "Platillo sin nombre",
         detalles: rawItem.descripcion || undefined,
         precio: precioNumerico,
         image: rawItem["url de imagen"] || null,
@@ -76,10 +81,12 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json(processedMenu);
-
   } catch (error) {
-    console.error('Error processing menu data from JSON:', error);
+    console.error("Error processing menu data from JSON:", error);
     // Devolver un error genérico
-    return NextResponse.json({ error: 'Failed to load menu data.' }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to load menu data." },
+      { status: 500 },
+    );
   }
 }
