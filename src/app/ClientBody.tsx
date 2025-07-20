@@ -4,18 +4,15 @@ import { useEffect } from "react";
 
 export default function ClientBody({
   children,
+  className,
 }: {
   children: React.ReactNode;
+  className: string;
 }) {
-  // Remove any extension-added classes during hydration and apply base class
   useEffect(() => {
-    // This runs only on the client after hydration
-    document.body.className = "antialiased";
-  }, []);
+    // This ensures the class is set on the client after hydration
+    document.body.className = className;
+  }, [className]);
 
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <body className={className}>{children}</body>;
 }

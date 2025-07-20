@@ -29,3 +29,6 @@ dist/
 ./node_modules/@biomejs/cli-darwin-x64/biome
 ./node_modules/typescript/lib/typescript.js
 ./node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
+
+# Local Netlify folder
+.netlify
