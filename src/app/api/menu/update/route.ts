@@ -5,6 +5,58 @@ import { getServerSession } from "next-auth/next";
 
 const jsonFilePath = path.join(process.cwd(), "src/app/api/menu/menu.json");
 
+// --- Interfaces for Transformation ---
+interface RawMenuItem {
+  Menu: string;
+  "sub-menu": string;
+  titulo: string;
+  descripcion: string;
+  Precio: string;
+  "url de imagen": string;
+}
+
+interface ProcessedMenuItem {
+  nombre: string;
+  detalles?: string;
+  precio: number;
+  image: string | null;
+}
+
+interface SubMenuData {
+  [subCategory: string]: ProcessedMenuItem[];
+}
+
+interface MenuData {
+  [category: string]: SubMenuData;
+}
+
+// --- Transformation Function ---
+const transformToNestedMenu = (rawItems: RawMenuItem[]): MenuData => {
+  const nestedMenu: MenuData = {};
+
+  for (const item of rawItems) {
+    const category = item.Menu;
+    const subCategory = item["sub-menu"];
+
+    if (!nestedMenu[category]) {
+      nestedMenu[category] = {};
+    }
+    if (!nestedMenu[category][subCategory]) {
+      nestedMenu[category][subCategory] = [];
+    }
+
+    nestedMenu[category][subCategory].push({
+      nombre: item.titulo,
+      detalles: item.descripcion,
+      precio: parseFloat(item.Precio),
+      image: item["url de imagen"],
+    });
+  }
+
+  return nestedMenu;
+};
+
+// --- API Route ---
 export async function POST(request: Request) {
   const session = await getServerSession();
 
@@ -13,18 +65,20 @@ export async function POST(request: Request) {
   }
 
   try {
-    const updatedMenu = await request.json();
+    const rawMenu: RawMenuItem[] = await request.json();
 
-    // Basic validation (you can add more robust validation here)
-    if (!Array.isArray(updatedMenu)) {
+    if (!Array.isArray(rawMenu)) {
       return NextResponse.json(
-        { error: "Invalid menu format" },
+        { error: "Invalid menu format. Expected an array." },
         { status: 400 },
       );
     }
 
-    // Convert the menu object back to a JSON string
-    const jsonContent = JSON.stringify(updatedMenu, null, 2);
+    // Transform the flat array back to the nested structure
+    const nestedMenu = transformToNestedMenu(rawMenu);
+
+    // Convert the nested menu object back to a JSON string
+    const jsonContent = JSON.stringify(nestedMenu, null, 2);
 
     // Write the new content to the menu.json file
     await fs.writeFile(jsonFilePath, jsonContent, "utf8");

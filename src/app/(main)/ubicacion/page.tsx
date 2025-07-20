@@ -138,6 +138,40 @@ export default function UbicacionPage() {
             </div>
 
             <div className="flex flex-col items-center">
+              <img
+                src="/logos/waze.svg"
+                alt="Waze Logo"
+                className="mb-2 w-8 h-8"
+              />
+              <p className="font-semibold text-[#6C3A3A]">Navega con Waze</p>
+              <a
+                href="https://waze.com/ul/h9ewmrth4p"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-[#D7A556] hover:underline mt-1"
+              >
+                Abrir en Waze
+              </a>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <img
+                src="/logos/waze.svg"
+                alt="Waze Logo"
+                className="mb-2 w-8 h-8"
+              />
+              <p className="font-semibold text-[#6C3A3A]">Navega con Waze</p>
+              <a
+                href="https://waze.com/ul/h9ewmrth4p"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-[#D7A556] hover:underline mt-1"
+              >
+                Abrir en Waze
+              </a>
+            </div>
+
+            <div className="flex flex-col items-center">
               <IconWhatsApp className="mb-2 text-green-500 w-8 h-8" />
               <p className="font-semibold text-sm text-[#6C3A3A]">WhatsApp</p>
               <a
