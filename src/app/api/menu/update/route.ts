@@ -13,9 +13,11 @@ interface RawMenuItem {
   descripcion: string;
   Precio: string;
   "url de imagen": string;
+  id?: string; // Now expecting ID from frontend
 }
 
 interface ProcessedMenuItem {
+  id: string; // Mandatory for processed item
   nombre: string;
   detalles?: string;
   precio: number;
@@ -45,7 +47,11 @@ const transformToNestedMenu = (rawItems: RawMenuItem[]): MenuData => {
       nestedMenu[category][subCategory] = [];
     }
 
+    // Use the existing ID from the raw item, or generate a new one if missing (shouldn't happen for existing items)
+    const itemId = item.id || crypto.randomUUID();
+
     nestedMenu[category][subCategory].push({
+      id: itemId,
       nombre: item.titulo,
       detalles: item.descripcion,
       precio: parseFloat(item.Precio),

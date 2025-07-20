@@ -41,10 +41,11 @@ interface RawMenuItem {
   descripcion: string;
   Precio: string;
   "url de imagen": string;
+  id?: string; // Make id optional for existing raw data, but will be added for new items
 }
 
 interface MenuItem {
-  id: string;
+  id: string; // Now mandatory for MenuItem
   nombre: string;
   detalles?: string;
   precio: number;
@@ -63,6 +64,7 @@ const transformToRawMenu = (menuItems: MenuItem[]): RawMenuItem[] => {
     descripcion: item.detalles || "",
     Precio: `${item.precio.toFixed(2)}`,
     "url de imagen": item.image || "/images/menu/logonala-menu.avif",
+    id: item.id, // Include the id
   }));
 };
 
@@ -85,13 +87,12 @@ export default function AdminMenuPage() {
         const rawData = await res.json();
 
         const transformedItems: MenuItem[] = [];
-        let idCounter = 0;
         for (const category in rawData) {
           for (const subCategory in rawData[category]) {
             for (const item of rawData[category][subCategory]) {
               transformedItems.push({
                 ...item,
-                id: `item-${idCounter++}`,
+                id: item.id || crypto.randomUUID(), // Use existing ID or generate new one
                 category,
                 subCategory,
               });
@@ -125,6 +126,11 @@ export default function AdminMenuPage() {
   };
 
   const handleSave = async (itemToSave: MenuItem) => {
+    // If it's a new item (no existing ID or a temporary one), assign a real UUID
+    if (!itemToSave.id || itemToSave.id.startsWith("item-")) {
+      itemToSave.id = crypto.randomUUID();
+    }
+
     const newItems = [...menuItems];
     const index = newItems.findIndex((item) => item.id === itemToSave.id);
 
