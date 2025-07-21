@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -89,6 +89,11 @@ export default function LoginPage() {
           Login
         </button>
       </form>
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <a href="/" style={{ color: "#0070f3", textDecoration: "underline" }}>
+          Volver a Inicio
+        </a>
+      </div>
     </div>
   );
 }

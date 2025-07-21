@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Poiret_One } from "next/font/google";
+import Link from "next/link";
+import React from "react";
 
 const MapDisplay = dynamic(() => import("@/components/MapDisplay"), {
   ssr: false,
@@ -137,7 +137,22 @@ export default function UbicacionPage() {
               </a>
             </div>
 
-            
+            <div className="flex flex-col items-center">
+              <img
+                src="/logos/waze.avif"
+                alt="Waze Logo"
+                className="mb-2 w-8 h-8"
+              />
+              <p className="font-semibold text-sm text-[#6C3A3A]">Waze</p>
+              <a
+                href="https://waze.com/ul?q=Av.%20Miguel%20L%C3%B3pez%20de%20Legaspi%20%26%20Vasco%20de%20Gama%2C%20Col.%2018%20de%20Marzo%2C%2044960%20Guadalajara%2C%20Jal."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-[#D7A556] hover:underline"
+              >
+                Navegar con Waze
+              </a>
+            </div>
 
             <div className="flex flex-col items-center">
               <IconWhatsApp className="mb-2 text-green-500 w-8 h-8" />

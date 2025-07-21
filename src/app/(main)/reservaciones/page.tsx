@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
 import dynamic from "next/dynamic";
-import { Poiret_One, Amatic_SC } from "next/font/google"; // Amatic_SC podría no ser necesaria aquí, pero Poiret_One sí.
+import Link from "next/link";
+import React from "react";
 
 const MapDisplay = dynamic(() => import("@/components/MapDisplay"), {
   ssr: false,
@@ -23,15 +22,6 @@ const MapDisplay = dynamic(() => import("@/components/MapDisplay"), {
   ),
 });
 
-const poiretOne = Poiret_One({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-// Si el formulario de reservaciones usa amaticSC, también se debe importar y configurar aquí.
-// Por ahora, solo incluyo Poiret_One que se usa en los títulos de sección.
-
 export default function ReservacionesPage() {
   // El estado y los manejadores del formulario de reservaciones se moverían aquí
   // Por simplicidad, estoy omitiendo la lógica del formulario por ahora,
@@ -45,7 +35,9 @@ export default function ReservacionesPage() {
         className="max-w-2xl mx-auto p-6 rounded-xl shadow-lg bg-[#fff] border border-[#D9D4CE] mb-16"
       >
         <h1
-          className={`text-3xl font-bold text-[#6C3A3A] mb-3 text-center ${poiretOne.className}`}
+          className={
+            "text-3xl font-bold text-[#6C3A3A] mb-3 text-center font-poiret-one"
+          }
         >
           Reservaciones
         </h1>
@@ -142,7 +134,9 @@ export default function ReservacionesPage() {
         className="max-w-4xl mx-auto mt-12 p-6 rounded-xl shadow-lg bg-[#fff] border border-[#D9D4CE]"
       >
         <h2
-          className={`text-2xl font-bold text-[#6C3A3A] mb-4 text-center ${poiretOne.className}`}
+          className={
+            "text-2xl font-bold text-[#6C3A3A] mb-4 text-center font-poiret-one"
+          }
         >
           Encuéntranos Aquí
         </h2>

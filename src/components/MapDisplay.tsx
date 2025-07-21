@@ -4,17 +4,23 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { useEffect, useRef } from "react";
 
-// Fix for default icon issue with Webpack/Next.js
-// This is a common workaround for Next.js
-if (typeof window !== 'undefined') {
-  delete (L.Icon.Default.prototype as any)._getIconUrl;
-
-  L.Icon.Default.mergeOptions({
-    iconRetinaUrl: "/images/marker-icon-2x.png",
-    iconUrl: "/images/marker-icon.png",
-    shadowUrl: "/images/marker-shadow.png",
-  });
+declare module "leaflet" {
+  namespace Icon {
+    interface Default {
+      _getIconUrl?: string;
+    }
+  }
 }
+
+const customIcon = L.icon({
+  iconUrl: "/images/marker-icon.png",
+  iconRetinaUrl: "/images/marker-icon-2x.png",
+  shadowUrl: "/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 
 const MapDisplay = () => {
   const position: [number, number] = [20.6381875, -103.3755625];
@@ -26,7 +32,7 @@ const MapDisplay = () => {
 
   useEffect(() => {
     // Ensure this code runs only on the client
-    if (typeof window === 'undefined' || !mapRef.current) {
+    if (typeof window === "undefined" || !mapRef.current) {
       return;
     }
 
@@ -35,11 +41,13 @@ const MapDisplay = () => {
       const map = L.map(mapRef.current).setView(position, 16);
       mapInstanceRef.current = map; // Store instance in ref
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
 
-      L.marker(position).addTo(map)
+      L.marker(position, { icon: customIcon })
+        .addTo(map)
         .bindPopup(`
           <strong>Casa NALA</strong><br>
           ${address}<br>
@@ -54,7 +62,7 @@ const MapDisplay = () => {
         mapInstanceRef.current = null;
       }
     };
-  }, [address, position]); // Empty dependency array ensures this runs only once on mount
+  }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
     <div
@@ -65,4 +73,3 @@ const MapDisplay = () => {
 };
 
 export default MapDisplay;
-

@@ -3,25 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Poiret_One, Amatic_SC } from "next/font/google";
-
-const poiretOne = Poiret_One({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const amaticSC = Amatic_SC({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import "@fontsource/poiret-one";
+import "@fontsource/amatic-sc";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#6C3A3A] text-[#F5E8D2] shadow-md">
+    <header className="sticky top-0 z-[1000] w-full bg-[#6C3A3A] text-[#F5E8D2] shadow-md">
       <div className="p-4 flex justify-between items-center">
         <div className="flex flex-grow items-center gap-2 md:flex-grow-0 md:gap-4">
           <Image
@@ -32,13 +21,13 @@ export default function Header() {
             className="bg-[#F5E8D2] p-0.5 h-12 w-auto object-contain flex-shrink-0"
           />
           <div className="flex-grow text-center md:text-left">
-            <div
-              className={`text-xl md:text-2xl tracking-wider ${poiretOne.className}`}
-            >
+            <div className="text-xl md:text-2xl tracking-wider font-poiret-one">
               CASA NALA
             </div>
             <div
-              className={`text-xs md:text-sm italic text-[#F5E8D2] font-light leading-none mt-0.5 ${amaticSC.className}`}
+              className={
+                "text-xs md:text-sm italic text-[#F5E8D2] font-light leading-none mt-0.5 font-amatic-sc"
+              }
             >
               Comida de México
             </div>

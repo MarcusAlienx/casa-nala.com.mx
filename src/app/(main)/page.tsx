@@ -1,12 +1,11 @@
 "use client";
 
+// Importar iconos para colapsar/expandir
+import { ChevronDown, ChevronUp, ShoppingCart } from "lucide-react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import type React from "react";
-import { useState, useEffect, useRef } from "react"; // Added useRef
-import { Poiret_One, Amatic_SC } from "next/font/google";
-import dynamic from "next/dynamic";
-// Importar iconos para colapsar/expandir
-import { ChevronUp, ChevronDown, ShoppingCart } from "lucide-react";
+import { useEffect, useRef, useState } from "react"; // Added useRef
 
 // MapDisplay import remains for other parts of the page if needed elsewhere,
 // but it's not directly used in the menu section itself.
@@ -15,17 +14,7 @@ import { ChevronUp, ChevronDown, ShoppingCart } from "lucide-react";
 //   loading: () => <p>Cargando mapa...</p>,
 // });
 
-const poiretOne = Poiret_One({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const amaticSC = Amatic_SC({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  display: "swap",
-});
+// --- FONT IMPORTS REMOVED ---
 
 // --- Eliminado: Menu Data Codificado ---
 // const menuDataFromCSV = { ... };
@@ -359,18 +348,16 @@ export default function Home() {
   // --- Renderizado del Componente ---
   return (
     <main className="min-h-screen bg-[#F5E8D2] pb-24">
-      
-
       {/* Hero (sin cambios) */}
       <section className="bg-[#F5E8D2] flex flex-col items-center text-[#6C3A3A] py-6">
         <div
-          className={`mt-2 text-4xl font-light tracking-[0.15em] ${poiretOne.className}`}
+          className={
+            "mt-2 text-4xl font-light tracking-[0.15em] font-poiret-one"
+          }
         >
           CASA NALA
         </div>
-        <div
-          className={`text-xl italic mt-1 text-[#9DA17B] ${amaticSC.className}`}
-        >
+        <div className={"text-xl italic mt-1 text-[#9DA17B] font-amatic-sc"}>
           Comida de México
         </div>
       </section>
@@ -446,7 +433,7 @@ export default function Home() {
                     <button
                       key={categoria}
                       onClick={() => scrollToCategory(categoria)}
-                      className={`px-4 py-1.5 rounded-full text-sm font-bold transition ${poiretOne.className} tracking-wider border ${activeCategory === categoria ? "bg-[#D7A556] text-white border-[#D7A556]" : "bg-[#6C3A3A] text-white border-[#6C3A3A] hover:bg-white hover:text-[#6C3A3A] hover:border-[#D9D4CE]"}`}
+                      className={`px-4 py-1.5 rounded-full text-sm font-bold transition font-poiret-one tracking-wider border ${activeCategory === categoria ? "bg-[#D7A556] text-white border-[#D7A556]" : "bg-[#6C3A3A] text-white border-[#6C3A3A] hover:bg-white hover:text-[#6C3A3A] hover:border-[#D9D4CE]"}`}
                       type="button"
                     >
                       {categoria.replace(/_/g, " ")}
@@ -496,7 +483,9 @@ export default function Home() {
                               }
                             }
                           }}
-                          className={`px-3 py-1 rounded-full text-xs font-bold transition ${poiretOne.className} tracking-wider border bg-[#9DA17B] text-white hover:bg-transparent hover:text-[#9DA17B] hover:border-[#9DA17B]`}
+                          className={
+                            "px-3 py-1 rounded-full text-xs font-bold transition font-poiret-one tracking-wider border bg-[#9DA17B] text-white hover:bg-transparent hover:text-[#9DA17B] hover:border-[#9DA17B]"
+                          }
                           type="button"
                         >
                           {subCategoriaKey.replace(/_/g, " ")}
@@ -522,7 +511,9 @@ export default function Home() {
                         className="mb-12 pt-4"
                       >
                         <h2
-                          className={`text-3xl font-bold text-[#6C3A3A] tracking-wider mb-6 border-b-2 border-[#D7A556] pb-2 ${poiretOne.className}`}
+                          className={
+                            "text-3xl font-bold text-[#6C3A3A] tracking-wider mb-6 border-b-2 border-[#D7A556] pb-2 font-poiret-one"
+                          }
                         >
                           {categoriaPrincipal.replace(/_/g, " ")}
                         </h2>
@@ -563,7 +554,8 @@ export default function Home() {
                                 )}
                                 <div className="mt-auto">
                                   <div className="font-bold text-[#D7A556] text-xl mb-3">
-                                    {typeof platillo.precio === 'number' && !Number.isNaN(platillo.precio)
+                                    {typeof platillo.precio === "number" &&
+                                    !Number.isNaN(platillo.precio)
                                       ? `$${platillo.precio.toFixed(2)}`
                                       : "Precio no disponible"}
                                   </div>
@@ -607,7 +599,7 @@ export default function Home() {
         <section className="max-w-3xl mx-auto px-6 py-8 bg-white rounded-xl shadow-md mt-4">
           {/* ... (código del formulario sin cambios) ... */}
           <h2
-            className={`text-2xl font-bold text-[#6C3A3A] mb-4 ${poiretOne.className}`}
+            className={"text-2xl font-bold text-[#6C3A3A] mb-4 font-poiret-one"}
           >
             Tus datos para recoger
           </h2>
@@ -896,7 +888,7 @@ export default function Home() {
             </svg>
           </div>
           <h2
-            className={`text-2xl font-bold text-[#6C3A3A] mb-2 ${poiretOne.className}`}
+            className={"text-2xl font-bold text-[#6C3A3A] mb-2 font-poiret-one"}
           >
             ¡Pedido Confirmado!
           </h2>
@@ -1026,7 +1018,9 @@ export default function Home() {
           {/* Sección de Contacto Adicional */}
           <div className="mt-8 pt-6 border-t border-gray-300">
             <h3
-              className={`text-xl font-semibold text-center text-[#6C3A3A] mb-4 ${poiretOne.className}`}
+              className={
+                "text-xl font-semibold text-center text-[#6C3A3A] mb-4 font-poiret-one"
+              }
             >
               ¿Tienes dudas o un pedido especial?
             </h3>
@@ -1112,7 +1106,9 @@ export default function Home() {
           <section className="fixed inset-0 bg-black bg-opacity-80 z-[100] flex items-center justify-center p-4">
             <div className="bg-white rounded-xl p-6 max-w-2xl w-full">
               <h3
-                className={`text-xl font-bold text-[#6C3A3A] mb-3 ${poiretOne.className}`}
+                className={
+                  "text-xl font-bold text-[#6C3A3A] mb-3 font-poiret-one"
+                }
               >
                 Área de Entrega
               </h3>
@@ -1167,7 +1163,9 @@ export default function Home() {
       {/* Sección aplicaciones de entrega (sin cambios) */}
       <section className="max-w-3xl mx-auto my-8 p-6 bg-white rounded-xl shadow-lg">
         <h2
-          className={`text-2xl font-bold text-[#6C3A3A] mb-3 text-center ${poiretOne.className}`}
+          className={
+            "text-2xl font-bold text-[#6C3A3A] mb-3 text-center font-poiret-one"
+          }
         >
           También disponibles en
         </h2>

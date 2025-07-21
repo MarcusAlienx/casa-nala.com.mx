@@ -19,6 +19,7 @@ out/
 # Environment variables
 .env*.local
 .env
+.env.tmp
 
 # Build artifacts / Logs
 *.log

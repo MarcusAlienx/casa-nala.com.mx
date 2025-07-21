@@ -1,11 +1,8 @@
-import { NextResponse } from "next/server";
-import fs from "node:fs/promises";
-import path from "node:path";
+import { getStore } from "@netlify/blobs";
 import { getServerSession } from "next-auth/next";
+import { NextResponse } from "next/server";
 
-const jsonFilePath = path.join(process.cwd(), "src/app/api/menu/menu.json");
-
-// --- Interfaces for Transformation ---
+// --- Interfaces (se mantienen igual) ---
 interface RawMenuItem {
   Menu: string;
   "sub-menu": string;
@@ -13,11 +10,11 @@ interface RawMenuItem {
   descripcion: string;
   Precio: string;
   "url de imagen": string;
-  id?: string; // Now expecting ID from frontend
+  id?: string;
 }
 
 interface ProcessedMenuItem {
-  id: string; // Mandatory for processed item
+  id: string;
   nombre: string;
   detalles?: string;
   precio: number;
@@ -32,37 +29,31 @@ interface MenuData {
   [category: string]: SubMenuData;
 }
 
-// --- Transformation Function ---
+// --- Función de Transformación (se mantiene igual) ---
 const transformToNestedMenu = (rawItems: RawMenuItem[]): MenuData => {
   const nestedMenu: MenuData = {};
-
   for (const item of rawItems) {
     const category = item.Menu;
     const subCategory = item["sub-menu"];
-
     if (!nestedMenu[category]) {
       nestedMenu[category] = {};
     }
     if (!nestedMenu[category][subCategory]) {
       nestedMenu[category][subCategory] = [];
     }
-
-    // Use the existing ID from the raw item, or generate a new one if missing (shouldn't happen for existing items)
     const itemId = item.id || crypto.randomUUID();
-
     nestedMenu[category][subCategory].push({
       id: itemId,
       nombre: item.titulo,
       detalles: item.descripcion,
-      precio: parseFloat(item.Precio),
+      precio: Number.parseFloat(item.Precio),
       image: item["url de imagen"],
     });
   }
-
   return nestedMenu;
 };
 
-// --- API Route ---
+// --- Ruta de la API ---
 export async function POST(request: Request) {
   const session = await getServerSession();
 
@@ -71,7 +62,12 @@ export async function POST(request: Request) {
   }
 
   try {
+    console.log("\n--- SERVER: UPDATE REQUEST RECEIVED ---");
     const rawMenu: RawMenuItem[] = await request.json();
+    console.log(
+      "SERVER: 1. Parsed raw menu from client:",
+      JSON.stringify(rawMenu, null, 2),
+    );
 
     if (!Array.isArray(rawMenu)) {
       return NextResponse.json(
@@ -80,16 +76,23 @@ export async function POST(request: Request) {
       );
     }
 
-    // Transform the flat array back to the nested structure
     const nestedMenu = transformToNestedMenu(rawMenu);
+    console.log("SERVER: 2. Transformed to nested menu for saving.");
 
-    // Convert the nested menu object back to a JSON string
-    const jsonContent = JSON.stringify(nestedMenu, null, 2);
+    // Guardar el menú como un string JSON en Netlify Blobs
+    const store = getStore("menu");
+    await store.set("menu", JSON.stringify(nestedMenu));
+    console.log("SERVER: 3. Data sent to Netlify Blobs.");
 
-    // Write the new content to the menu.json file
-    await fs.writeFile(jsonFilePath, jsonContent, "utf8");
+    // Leer los datos inmediatamente después de guardarlos para confirmar
+    const updatedMenuData = await store.get("menu", { type: "json" });
+    console.log("SERVER: 4. Confirmed data retrieved from Blobs.");
 
-    return NextResponse.json({ message: "Menu updated successfully" });
+    console.log("SERVER: 5. Sending updated data back to client.");
+    return NextResponse.json({
+      message: "Menu updated successfully",
+      updatedData: updatedMenuData, // Devolver los datos actualizados
+    });
   } catch (error) {
     console.error("Error updating menu:", error);
     return NextResponse.json(

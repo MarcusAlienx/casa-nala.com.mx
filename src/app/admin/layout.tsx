@@ -1,9 +1,10 @@
 "use client";
 
-import { useSession, signOut } from "next-auth/react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 
 export default function AdminLayout({
   children,
@@ -26,7 +27,14 @@ export default function AdminLayout({
     <div>
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
         <h1 className="text-xl">Admin Panel</h1>
-        <Button onClick={() => signOut({ callbackUrl: "/" })}>Sign Out</Button>
+        <div className="flex items-center gap-4">
+          <Link href="/" className="text-sm hover:underline">
+            Inicio
+          </Link>
+          <Button onClick={() => signOut({ callbackUrl: "/" })}>
+            Sign Out
+          </Button>
+        </div>
       </header>
       <main className="p-4">{children}</main>
     </div>

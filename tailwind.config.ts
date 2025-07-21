@@ -51,6 +51,12 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+      fontFamily: {
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+        "poiret-one": ["Poiret One", "sans-serif"],
+        "amatic-sc": ["Amatic SC", "cursive"], // Add this line
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
