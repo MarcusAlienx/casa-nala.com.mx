@@ -6,10 +6,7 @@
 
 - [Visión General del Proyecto](#visión-general-del-proyecto)
 - [Cómo Empezar (Desarrollo Local)](#cómo-empezar-desarrollo-local)
-- [Cómo Actualizar el Menú](#cómo-actualizar-el-menú)
-  - [Estructura del Menú](#estructura-del-menú)
-  - [Añadir o Modificar un Platillo](#añadir-o-modificar-un-platillo)
-  - [Gestionar Imágenes](#gestionar-imágenes)
+- [Gestión del Menú](#gestión-del-menú)
 - [Variables de Entorno](#variables-de-entorno)
 - [Despliegue en Netlify](#despliegue-en-netlify)
 
@@ -20,9 +17,11 @@
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
 - **Estilos:** [Tailwind CSS](https://tailwindcss.com/) con [shadcn/ui](https://ui.shadcn.com/)
 - **Gestor de Paquetes:** [npm](https://www.npmjs.com/)
+- **Base de Datos del Menú:** [Netlify Blobs](https://docs.netlify.com/blobs/overview/)
+- **Autenticación:** [NextAuth.js](https://next-auth.js.org/)
 - **Hosting:** [Netlify](https://www.netlify.com/)
 
-El proyecto está estructurado para que la actualización del contenido, especialmente el menú, sea lo más sencilla posible, modificando un único archivo.
+El proyecto está estructurado para facilitar la gestión del menú a través de un panel de administración protegido.
 
 ### Cómo Empezar (Desarrollo Local)
 
@@ -54,64 +53,39 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local.
 
 ---
 
-### Cómo Actualizar el Menú
+### Gestión del Menú
 
-La gestión del menú es el corazón de este proyecto. Para realizar cualquier cambio, solo necesitas editar un archivo: `src/app/api/menu/menu.json`.
+Para actualizar el menú, ya no es necesario editar archivos JSON manualmente. Ahora se utiliza un panel de administración.
 
-El sistema está diseñado para leer este archivo y construir dinámicamente las secciones y platillos en el sitio web.
+1.  **Accede al Panel de Administración:**
+    -   Navega a `[URL_DEL_SITIO]/login`.
+    -   Inicia sesión con las credenciales de administrador (configuradas en las variables de entorno).
 
-#### Estructura del Menú
+2.  **Gestiona los Platillos:**
+    -   Una vez dentro, verás una interfaz para **añadir, editar y eliminar** platillos del menú.
+    -   Puedes cambiar nombres, descripciones, precios, categorías y subcategorías.
+    -   También puedes subir nuevas imágenes para los platillos directamente desde el panel.
 
-El archivo `menu.json` es una lista de objetos, donde cada objeto representa un platillo y tiene la siguiente estructura:
-
-```json
-{
-  "Menu": "DESAYUNOS",
-  "sub-menu": "Hot Cakes",
-  "titulo": "Hot cakes Naturales (3pzs)",
-  "descripcion": "libre de azucar",
-  "Precio": "$60.00",
-  "url de imagen": "/images/menu/hotcakes_naturales.webp"
-}
-```
-
--   `"Menu"`: La categoría principal (ej. "DESAYUNOS", "TRADICIONALES").
--   `"sub-menu"`: La sub-categoría dentro del menú principal (ej. "Hot Cakes", "Tortas Ahogadas").
--   `"titulo"`: El nombre del platillo que se mostrará.
--   `"descripcion"`: Una breve descripción del platillo.
--   `"Precio"`: El precio del platillo, como texto (ej. `"$60.00"`).
--   `"url de imagen"`: La ruta a la imagen del platillo.
-
-#### Añadir o Modificar un Platillo
-
-1.  **Abre el archivo:** `src/app/api/menu/menu.json`.
-2.  **Para modificar un platillo existente:** Busca el platillo en la lista y edita los valores de los campos que desees cambiar (por ejemplo, el `"Precio"` o la `"descripcion"`).
-3.  **Para añadir un nuevo platillo:**
-    -   Copia un objeto existente para mantener la estructura.
-    -   Pégalo al final de la lista (o donde prefieras).
-    -   Asegúrate de que haya una coma `,` después del objeto anterior.
-    -   Modifica todos los campos para reflejar los datos del nuevo platillo. Si pertenece a una nueva categoría o sub-categoría, simplemente escribe el nuevo nombre en los campos `"Menu"` o `"sub-menu"`, y el sistema creará la sección automáticamente.
-
-#### Gestionar Imágenes
-
-1.  **Prepara tu imagen:**
-    -   Asegúrate de que la imagen sea de buena calidad pero esté optimizada para la web (formato `.webp` es ideal para un buen balance entre calidad y tamaño).
-    -   El nombre del archivo debe ser descriptivo y en minúsculas (ej. `torta_ahogada_pollo.webp`).
-
-2.  **Sube la imagen:**
-    -   Coloca tu nueva imagen en la carpeta: `public/images/menu/`.
-
-3.  **Asigna la imagen al platillo:**
-    -   En el archivo `menu.json`, busca el platillo correspondiente.
-    -   Actualiza el campo `"url de imagen"` para que apunte a tu nueva imagen. La ruta debe empezar con `/images/menu/`. Por ejemplo: `"/images/menu/torta_ahogada_pollo.webp"`.
+3.  **Poblar el Menú Inicialmente (Seed):**
+    -   Si es la primera vez que configuras el sitio o si necesitas restaurar el menú desde un archivo base, puedes usar la ruta de "seed".
+    -   Visita `[URL_DEL_SITIO]/api/menu/seed` en tu navegador. Esto leerá el archivo `menu_seed.json` y poblará la base de datos de Netlify Blobs.
+    -   **Advertencia:** Usar esta ruta **sobrescribirá** cualquier cambio que hayas hecho en el menú desde el panel de administración.
 
 ---
 
 ### Variables de Entorno
 
-Para que el formulario de pedidos por correo y el enlace de WhatsApp funcionen, debes configurar las siguientes variables en un archivo `.env.local` en la raíz del proyecto:
+Para que el formulario de pedidos, la autenticación y otras funciones operen correctamente, debes configurar las siguientes variables en un archivo `.env.local`:
 
 ```env
+# Credenciales de Autenticación para el Admin
+ADMIN_USER=tu_usuario_admin
+ADMIN_PASSWORD=tu_contraseña_admin
+
+# Configuración de NextAuth
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=genera_un_secret_seguro # Puedes usar `openssl rand -hex 32`
+
 # Configuración del servidor de correo (para enviar correos de pedidos)
 EMAIL_SERVER_USER=tu_usuario_smtp@example.com
 EMAIL_SERVER_PASSWORD=tu_contraseña_smtp
@@ -124,6 +98,11 @@ EMAIL_SMTP_SECURE=true
 
 # Configuración de WhatsApp
 NEXT_PUBLIC_WHATSAPP_NUMBER=521XXXXXXXXXX # Tu número de WhatsApp con código de país
+
+# Configuración de Cloudinary (para imágenes del menú)
+CLOUDINARY_CLOUD_NAME=tu_cloud_name
+CLOUDINARY_API_KEY=tu_api_key
+CLOUDINARY_API_SECRET=tu_api_secret
 ```
 
 **Importante:**
@@ -141,5 +120,7 @@ El proyecto está configurado para un despliegue continuo desde GitHub a Netlify
     -   **Comando de Build:** `npm run build`
     -   **Directorio de Publicación:** `.next`
 3.  **Variables de Entorno:**
-    -   Ve a la configuración de tu sitio en Netlify → `Build & deploy` → `Environment`.
-    -   Añade las mismas variables de entorno que tienes en tu archivo `.env.local`. Esto es **crucial** para que la funcionalidad de correos y WhatsApp funcione en producción.
+    -   Ve a la configuración de tu sitio en Netlify → `Site configuration` → `Environment variables`.
+    -   Añade las mismas variables de entorno que tienes en tu archivo `.env.local`. Esto es **crucial** para que todas las funcionalidades operen en producción.
+4.  **Habilita Netlify Blobs:**
+    -   Ve a la pestaña `Integrations` → `Blobs` y habilita el servicio para tu sitio.
